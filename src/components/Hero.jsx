@@ -23,9 +23,9 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Explore the Lovecoin get Rewards for using Love app and Chatting with {` `}
+            Explore Lovecoin and get Rewards for using {` `}
             <span className="inline-block relative">
-              your loved ones{" "}
+              Love app.{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -36,7 +36,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash the power of Blockchain within LoveCoin. With AI Recommendations and cutting edge technology for Dating Safety and security.
+           
+          First time in the history of dating apps brought to you by Love App where you not only stop paying for using the dating app but you also start earning Love coin Rewards for just using the App, it is absolutely free and will always be free
           </p>
           <Button href="/pricing" white>
             Get started
@@ -71,7 +72,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Date now"
                   />
                 </ScrollParallax>
               </div>

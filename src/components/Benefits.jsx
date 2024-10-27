@@ -11,7 +11,7 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Brainwave"
+          title="Still paying for dating apps?... now start earning using Love App"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">

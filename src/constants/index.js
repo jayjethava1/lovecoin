@@ -96,24 +96,24 @@ export const roadmap = [
     id: "0",
     title: "Voice recognition",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
+    date: "May 2025",
+    status: "progress",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
     title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the Love App more frequently.",
+    date: "May 2025",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "Love App customization",
+    text: "Allow users to customize the Love App's appearance and behavior, making it more engaging and fun to interact with.",
+    date: "May 2025",
     status: "done",
     imageUrl: roadmap3,
   },
@@ -121,28 +121,48 @@ export const roadmap = [
     id: "3",
     title: "Integration with APIs",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    date: "May 2025",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "where all apps charges for this feature it is absolutely free and reward earning in love app";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "See who Liked your profile",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Send Compliments",
+    text: collabText,
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "See likes given",
+    text: collabText,
+  },
+  
+  {
+    id: "3",
+    title: "Send messages",
+    text: collabText,
+  },
+  
+  {
+    id: "4",
+    title: "Unlimited Likes",
+    text: collabText,
+  },
+  
+  {
+    id: "5",
+    title: "Many more premium features",
+    text: collabText,
   },
 ];
 
@@ -208,35 +228,45 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "Silver",
+    description: "Basic App Features",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Likes a day - limited",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Gold",
+    description: "Premium App Features",
+    price: "0",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Likes a day - unlimited",
+      "See who likes you",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Platinum",
+    description: "Most Premium App Features",
+    price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Likes a day - unlimited",
+      "See who likes you",
+      "See whom you liked",
+    ],
+  },
+  {
+    id: "2",
+    title: "Titanium",
+    description: "Most Premium App Features",
+    price: "0",
+    features: [
+      "Likes a day - unlimited",
+      "See who likes you",
+      "Send Compliments",
+      "See whom you liked",
+      "See whom you disliked"
     ],
   },
 ];
@@ -244,16 +274,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Decentralized Governance through Love Coin:",
+    text: "Love Coin holders can propose and vote on platform developments, updates, and policy changes. By giving users a voice, Love fosters a community where decisions align with user needs, ensuring a more inclusive and transparent platform experience.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Proof of Stake (PoS) Rewards System",
+    text: "The platform’s PoS mechanism rewards users who stake their Love Coins, providing them with daily or monthly staking rewards based on the amount and duration of their commitment. This system encourages long-term engagement and supports network stability.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +291,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Enhanced Security and Data Privacy",
+    text: "We do not sell any of your information to anyone, that's a promise we will always keep. Additionally, your most sensitive data is heavily encrypted and will be safe even if a data breach were to occur.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Rewarding Platform Participation",
+    text: "Users can earn Love Coins for various activities, such as completing profiles, verifying identities, initiating conversations, and participating in governance. This incentivizes active participation and improves user engagement, making Love a rewarding social ecosystem.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +308,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Flexible Staking Options",
+    text: "The staking feature allows users to lock their Love Coins for set durations, with varying rewards based on the commitment length. This offers flexibility for both short-term users and long-term investors, creating a dynamic and versatile staking ecosystem.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Community-Centric Ecosystem",
+    text: "Love creates a social space where users feel ownership and are motivated to support the platform’s growth. This community-driven model encourages organic interactions, honest feedback, and a collaborative approach to platform improvement.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
