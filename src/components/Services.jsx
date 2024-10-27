@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Latest Cutting Edge technologies used in Love App"
+          text="Love App integrates Web3, Python, AI tools, React native, MongoDB, AWS, Azure, and Many more"
         />
 
         <div className="relative">
@@ -26,7 +26,7 @@ const Services = () => {
               <img
                 className="w-full h-full object-cover md:object-right"
                 width={800}
-                alt="Smartest AI"
+                alt="Smartest AI Recommendations"
                 height={730}
                 src={service1}
               />
@@ -35,7 +35,7 @@ const Services = () => {
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                Love App unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {loveFeatures.map((item, index) => (
@@ -66,10 +66,9 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Seamless Dating Experience</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Our Latest cutting edge technologies ensure faster loading and scaling for seamless dating experience
                 </p>
               </div>
 
@@ -78,10 +77,9 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Absolute Free</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                  Where these cutting Edge technologies incur heavy costs and development efforts, for you as a user it is free and will always be free
                 </p>
 
                 <ul className="flex items-center justify-between">
