@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
-import { loveFeatures, brainwaveServicesIcons } from "../constants";
+import { loveFeatures, loveServiceIcons as loveServiceIcons } from "../constants";
 import {
   PhotoChatMessage,
   Gradient,
@@ -79,11 +79,11 @@ const Services = () => {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Absolute Free</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  Where these cutting Edge technologies incur heavy costs and development efforts, for you as a user it is free and will always be free
+                  Where these cutting Edge technologies incur heavy costs and development efforts, for you as a user it is free and will always be free.
                 </p>
 
                 <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
+                  {loveServiceIcons.map((item, index) => (
                     <li
                       key={index}
                       className={`rounded-2xl flex items-center justify-center ${

@@ -83,7 +83,7 @@ export const loveFeatures = [
   "Holders right to Vote",
 ];
 
-export const brainwaveServicesIcons = [
+export const loveServiceIcons = [
   recording03,
   recording01,
   disc02,
@@ -92,38 +92,39 @@ export const brainwaveServicesIcons = [
 ];
 
 export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2025",
-    status: "progress",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
+  
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the Love App more frequently.",
-    date: "May 2025",
-    status: "progress",
-    imageUrl: roadmap2,
+    title: "Integration with APIs",
+    text: "Front-End integration with APIs",
+    date: "Jan 2025",
+    status: "done",
+    imageUrl: roadmap4,
   },
   {
-    id: "2",
+    id: "0",
     title: "Love App customization",
     text: "Allow users to customize the Love App's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2025",
+    date: "March 2025",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2025",
+    title: "AI Recommendation System",
+    text: "Train the Love App Recommendation AI model to understand and do an unbiased matches with the interested profiles using the preferences and other parameters to voice commands, making it easier for users to interact with the app hands-free.",
+    date: "June 2025",
     status: "progress",
-    imageUrl: roadmap4,
+    imageUrl: roadmap1,
+    colorful: true,
+  },
+  {
+    id: "4",
+    title: "Launch worldwide with Internationalization languages support",
+    text: "Launch the App world wide in different languages support like en, fr, br etc.,",
+    date: "Sept 2025",
+    status: "progress",
+    imageUrl: roadmap2,
   },
 ];
 

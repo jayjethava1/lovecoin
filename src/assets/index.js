@@ -81,7 +81,7 @@ export {
   check2,
   loading1,
   loveLogo as loveLogo,
-  loveWhiteSymbol as brainwaveWhiteSymbol,
+  loveWhiteSymbol as loveWhiteSymbol,
   play,
   gradient,
   smallSphere,
