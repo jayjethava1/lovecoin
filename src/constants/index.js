@@ -129,41 +129,35 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "where all apps charges for this feature it is absolutely free and reward earning in love app";
+  "In Collaboration with: ";
 
 export const collabContent = [
   {
     id: "0",
     title: "See who Liked your profile",
-    text: collabText,
   },
   {
     id: "1",
     title: "Send Compliments",
-    text: collabText,
   },
   {
     id: "2",
     title: "See likes given",
-    text: collabText,
   },
   
   {
     id: "3",
     title: "Send messages",
-    text: collabText,
   },
   
   {
     id: "4",
     title: "Unlimited Likes",
-    text: collabText,
   },
   
   {
     id: "5",
     title: "Many more premium features",
-    text: collabText,
   },
 ];
 
