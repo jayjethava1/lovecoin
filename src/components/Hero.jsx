@@ -39,7 +39,7 @@ const Hero = () => {
            
           First time in the history of dating apps brought to you by Love App where you not only stop paying for using the dating app but you also start earning Love coin Rewards for just using the App, it is absolutely free and will always be free
           </p>
-          <Button href="/pricing" white>
+          <Button href="#pricing" white>
             Get started
           </Button>
         </div>
