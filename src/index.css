@@ -13,6 +13,13 @@
   color-scheme: dark;
 }
 
+:logo {
+  min-width: 80px;
+  min-height: 80px;
+  width: auto;
+  height: 80px;
+}
+
 * {
   scroll-behavior: smooth
 }

@@ -37,7 +37,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="https://lovecoin.online">
-          <img src={love} width={32} height={32} alt="Love" />
+          <img src={love} width={64} height={64} alt="Love" />
         </a>
 
         <nav
