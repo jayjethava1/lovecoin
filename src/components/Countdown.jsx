@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-const Timer3 = () => {
+const CountDown = () => {
   const [countDownTime, setCountDownTIme] = useState({
     days: "00",
     hours: "00",
@@ -124,4 +124,4 @@ const Timer3 = () => {
       </div>
   );
 };
-export default Timer3;
+export default CountDown;
