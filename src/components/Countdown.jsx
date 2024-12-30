@@ -67,7 +67,7 @@ const Countdown = () => {
          <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
          <h1 className="h1 mb-6">
         <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
-          Presale goes Live In: 
+          Presale goes Live On 1st January, 2025 at 00:00:00 UTC +5:30 hours. 
         </span>
         </h1>
         </div>
