@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-const CountDown = () => {
+const Countdown = () => {
   const [countDownTime, setCountDownTIme] = useState({
     days: "00",
     hours: "00",
@@ -124,4 +124,4 @@ const CountDown = () => {
       </div>
   );
 };
-export default CountDown;
+export default Countdown;

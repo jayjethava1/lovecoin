@@ -9,7 +9,7 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import TokenSale from "./TokenSale";
-import Countdown from "./CountDown";
+import Countdown from "./Countdown";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
