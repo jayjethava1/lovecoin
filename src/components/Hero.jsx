@@ -8,6 +8,8 @@ import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
+import TokenSale from "./TokenSale";
+import Countdown from "./CountDown";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -39,9 +41,8 @@ const Hero = () => {
            
           First time in the history of dating apps brought to you by Love App where you not only stop paying for using the dating app but you also start earning Love coin Rewards for just using the App, it is absolutely free and will always be free
           </p>
-          <Button href="#pricing" white>
-            Get started
-          </Button>
+        <Countdown  />
+        <TokenSale />
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
