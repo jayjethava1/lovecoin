@@ -48,8 +48,8 @@ const Countdown = () => {
   const startCountDown = useCallback(() => {
     const customDate = new Date();
     const countDownDate = new Date(
-      2024,
-      12,
+      2025,
+      3,
       0,
       23,
       59,
@@ -67,7 +67,7 @@ const Countdown = () => {
          <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
          <h1 className="h1 mb-6">
         <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
-          Presale goes Live On 1st January, 2025 at 00:00:00 UTC +5:30 hours. 
+         Time Left Untill Presale Ends, The Rate of Love Coin increases gradually linearly as Time passes. 
         </span>
         </h1>
         </div>
