@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import Button from './Button';
 
-const abi = [{ "inputs": [{ "internalType": "uint256", "name": "_cap", "type": "uint256" }, { "internalType": "uint256", "name": "_rate", "type": "uint256" }, { "internalType": "address payable", "name": "_wallet", "type": "address" }, { "internalType": "contract IERC20", "name": "_token", "type": "address" }, { "internalType": "uint256", "name": "_openingtime", "type": "uint256" }, { "internalType": "uint256", "name": "_closingtime", "type": "uint256" }], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "uint256", "name": "prevClosingTime", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "newClosingTime", "type": "uint256" }], "name": "TimedCrowdsaleExtended", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "purchaser", "type": "address" }, { "indexed": true, "internalType": "address", "name": "beneficiary", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" }], "name": "TokensPurchased", "type": "event" }, { "payable": true, "stateMutability": "payable", "type": "fallback" }, { "constant": false, "inputs": [{ "internalType": "address", "name": "beneficiary", "type": "address" }], "name": "buyTokens", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [], "name": "cap", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "capReached", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "closingTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "hasClosed", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "isOpen", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "openingTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "rate", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "token", "outputs": [{ "internalType": "contract IERC20", "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "wallet", "outputs": [{ "internalType": "address payable", "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "weiRaised", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }];
+const abi = [{"inputs":[{"internalType":"uint256","name":"_cap","type":"uint256"},{"internalType":"uint256","name":"_rate","type":"uint256"},{"internalType":"address payable","name":"_wallet","type":"address"},{"internalType":"contract IERC20","name":"_token","type":"address"},{"internalType":"uint256","name":"_openingtime","type":"uint256"},{"internalType":"uint256","name":"_closingtime","type":"uint256"},{"internalType":"uint256","name":"_initialrate","type":"uint256"},{"internalType":"uint256","name":"_finalrate","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"prevClosingTime","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"newClosingTime","type":"uint256"}],"name":"TimedCrowdsaleExtended","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"purchaser","type":"address"},{"indexed":true,"internalType":"address","name":"beneficiary","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"TokensPurchased","type":"event"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"constant":false,"inputs":[{"internalType":"address","name":"beneficiary","type":"address"}],"name":"buyTokens","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"cap","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"capReached","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"closingTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"finalRate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getCurrentRate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hasClosed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"initialRate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isOpen","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"openingTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"token","outputs":[{"internalType":"contract IERC20","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"wallet","outputs":[{"internalType":"address payable","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"weiRaised","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}];
+
+
 const TokenSale = () => {
   const [web3, setWeb3] = useState(null);
   const [account, setAccount] = useState(null);
@@ -14,36 +16,44 @@ const TokenSale = () => {
   const [connected, setConnected] = useState(false);
   const [cap, setCap] = useState('0');
   const [weiRaised, setWeiRaised] = useState('0');
+  const [currentRate, setCurrentRate] = useState('0');
 
   const init = async () => {
     try {
-      
-    
-    if (window.ethereum) {
-      const web3 = new Web3(window.ethereum);
-      await window.ethereum.request({ method: 'eth_requestAccounts' });
-      const accounts = await web3.eth.getAccounts();
-      const contractAddress = '0x411B9548cC2D4bE46eF69d680fb7e7894aE2506B';
-      const contract = new web3.eth.Contract(abi, contractAddress);
-
-      const capValue = await contract.methods.cap().call();
-      const weiRaisedValue = await contract.methods.weiRaised().call();
-      setCap(web3.utils.fromWei(capValue, 'ether'));
-      setWeiRaised(web3.utils.fromWei(weiRaisedValue, 'ether'));
-
-      setWeb3(web3);
-      setAccount(accounts[0]);
-      setContract(contract);
-      setConnected(true);
-      setLoading(false);
-    } else {
-      alert('Please install MetaMask or another web3 wallet');
+      if (window.ethereum) {
+        const web3 = new Web3(window.ethereum);
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const accounts = await web3.eth.getAccounts();
+        const contractAddress = '0x0BC8e8439d5dc14BED8f5d82F90C505E0a6b7FfD';
+        const contract = new web3.eth.Contract(abi, contractAddress);
+  
+        const capValue = await contract.methods.cap().call();
+        const weiRaisedValue = await contract.methods.weiRaised().call();
+        const rateValue = await contract.methods.getCurrentRate().call();
+  
+        console.log('Cap Value:', capValue);
+        console.log('Wei Raised Value:', weiRaisedValue);
+        console.log('Rate Value:', rateValue);
+  
+        setCap(web3.utils.fromWei(capValue, 'ether'));
+        setWeiRaised(web3.utils.fromWei(weiRaisedValue, 'ether'));
+        setCurrentRate(rateValue);
+  
+        setWeb3(web3);
+        setAccount(accounts[0]);
+        setContract(contract);
+        setConnected(true);
+        setLoading(false);
+  
+      } else {
+        alert('Please install MetaMask or another web3 wallet');
+      }
+    } catch (error) {
+      alert('Please make sure you are on BNB Chain in your Web3 Wallet');
+      console.error('Error during initialization:', error);
     }
-  } catch (error) {
-
-    alert('Please make sure you are on BNB Chain in your Web3 Wallet');
-  }
   };
+  
 
   const handleAccountChanged = (accounts) => {
     setAccount(accounts[0]);
@@ -102,9 +112,15 @@ const TokenSale = () => {
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center items-center mt-8"> 
+            <span className="text-lg font-semibold text-[#a5b4fc] mr-2">Current Rate:</span> 
+            <span className="text-lg text-gray-800 dark:text-white">{currentRate > 0 ? `${currentRate} tokens per BNB` : 'Fetching rate...'}</span> 
+          </div>
           <input
             type="number"
-            className="ring-offset-purple-400 mr-4 h-5"
+            className="ring-offset-purple-400 mr-4 h-full"
+            style={{height: '2.4rem', padding: '0.5rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', background: '#343650'}}
             value={amount}
             onChange={handleAmountChange}
             placeholder="Enter amount in BNB"
